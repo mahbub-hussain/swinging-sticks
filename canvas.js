@@ -56,17 +56,7 @@ function drow() {
   // join stick 2
   let x4 = x1-(Math.sin(a2))*stk2/100*65
   let y4 = y1 -(Math.cos(a2))*stk2/100*65
-
-
-  ctx.beginPath()
-  ctx.lineCap = "round"
-  ctx.lineJoin = "round"
-  ctx.moveTo(x, y)
-  ctx.lineTo(x/2, y*2-10)
-  ctx.lineTo(x+x/2, y*2-10)
-  ctx.closePath()
-  ctx.strokeStyle = "#c0c0c0"
-  ctx.stroke()
+ 
   
 
   ctx.beginPath()
@@ -80,6 +70,16 @@ function drow() {
   ctx.moveTo(x1, y1)
   ctx.lineTo(x3, y3)
   ctx.lineTo(x4, y4)
+  ctx.stroke() 
+ 
+  ctx.beginPath()
+  ctx.lineCap = "round"
+  ctx.lineJoin = "round"
+  ctx.moveTo(x, y)
+  ctx.lineTo(x/2, y*2-10)
+  ctx.lineTo(x+x/2, y*2-10)
+  ctx.closePath()
+  ctx.strokeStyle = "#c0c0c0"
   ctx.stroke()
 
 }
