@@ -44,12 +44,12 @@ function drow() {
   a2 -= a2_v
   
    //stick 1
-  let x1 = x -(Math.sin(a1)) *stk1/100*25
-  let y1 = y -(Math.cos(a1)) *stk1/100*25
+  let x1 = x -(Math.sin(a1)) *stk1/3
+  let y1 = y -(Math.cos(a1)) *stk1/3
 
    // join stick 1 
-  let x2 = x+(Math.sin(a1))*stk1/100*75
-  let y2 = y+(Math.cos(a1))*stk1/100*75
+  let x2 = x+(Math.sin(a1))*stk1/2.5
+  let y2 = y+(Math.cos(a1))*stk1/2.5
 
 
    // stick 2
