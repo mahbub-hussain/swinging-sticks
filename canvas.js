@@ -1,26 +1,29 @@
  let canvas = document.getElementById("canvas")
  let ctx = canvas.getContext("2d");
 
+ canvas.width=window.innerWidth;
+ canvas.height=window.innerHeight;
+ window.addEventListener('resize',function(){
  canvas.width=window.innerWidth
- canvas.height=600
- 
- let x = canvas.width/2
- let y = canvas.height/2
+ canvas.height=window.innerHeight
+ })
+ let x = canvas.width/2;
+ let y = canvas.height/2;
 
  //angel,length,mass,velocity,gravity
- let a1 =Math.PI/1.1
- let a2 = Math.PI/2
- let ln1 = 370
- let ln2 = 600
- let m1=1000000
- let m2=10000
- let a1_v = 0
- let a2_v = 0
- let g =.4
+ let a1 =Math.PI/1.1;
+ let a2 = Math.PI/2;
+ let ln1 = 370;
+ let ln2 = 600;
+ let m1=1000000;
+ let m2=10000;
+ let a1_v = 0;
+ let a2_v = 0;
+ let g =.4;
  
  //stick length
- let stk1=200
- let stk2=stk1/100*75
+ let stk1=200;
+ let stk2=stk1/100*75;
  
 function drow() {
     // double pendulum equation
