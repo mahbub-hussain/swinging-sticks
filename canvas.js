@@ -22,7 +22,7 @@
  let g =.14;
  
  //stick length
- let stk1=canvas.width-20;
+ let stk1=canvas.width;
  let stk2=stk1/100*85;
  
 function drow() {
@@ -44,8 +44,8 @@ function drow() {
   a2 -= a2_v
   
    //stick 1
-  let x1 = x -(Math.sin(a1)) *stk1/100*35
-  let y1 = y -(Math.cos(a1)) *stk1/100*35
+  let x1 = x -(Math.sin(a1)) *stk1/100*25
+  let y1 = y -(Math.cos(a1)) *stk1/100*25
 
    // join stick 1 
   let x2 = x+(Math.sin(a1))*stk1/100*75
