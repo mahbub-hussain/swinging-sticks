@@ -13,16 +13,16 @@
  //angel,length,mass,velocity,gravity
  let a1 =Math.PI/1.1;
  let a2 = Math.PI/2;
- let ln1 = 370;
- let ln2 = 600;
- let m1=1000000;
- let m2=10000;
+ let ln1 = 380;
+ let ln2 = 500;
+ let m1=100000;
+ let m2=1000;
  let a1_v = 0;
  let a2_v = 0;
- let g =.4;
+ let g =.14;
  
  //stick length
- let stk1=200;
+ let stk1=x/2;
  let stk2=stk1/100*75;
  
 function drow() {
@@ -60,7 +60,15 @@ function drow() {
   let x4 = x1-(Math.sin(a2))*stk2/100*65
   let y4 = y1 -(Math.cos(a2))*stk2/100*65
  
-  
+  //Stand
+  ctx.beginPath();
+  ctx.lineJoin = "miter"
+  ctx.moveTo(x, y)
+  ctx.lineTo(x/2, y*2-10)
+  ctx.lineTo(x+x/2, y*2-10)
+  ctx.closePath()
+  ctx.strokeStyle = "#c0c0c0"
+  ctx.stroke()
 
   ctx.beginPath()
   ctx.lineCap = "round"
@@ -75,15 +83,7 @@ function drow() {
   ctx.lineTo(x4, y4)
   ctx.stroke() 
  
-  ctx.beginPath()
-  ctx.lineCap = "round"
-  ctx.lineJoin = "round"
-  ctx.moveTo(x, y)
-  ctx.lineTo(x/2, y*2-10)
-  ctx.lineTo(x+x/2, y*2-10)
-  ctx.closePath()
-  ctx.strokeStyle = "#c0c0c0"
-  ctx.stroke()
+  
 
 }
 
