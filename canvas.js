@@ -16,13 +16,13 @@
  let ln1 = 380;
  let ln2 = 500;
  let m1=100000;
- let m2=1000;
+ let m2=2000;
  let a1_v = 0;
  let a2_v = 0;
  let g =.14;
  
  //stick length
- let stk1=x/2;
+ let stk1=y/2;
  let stk2=stk1/100*75;
  
 function drow() {
