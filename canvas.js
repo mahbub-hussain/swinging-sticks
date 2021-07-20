@@ -22,8 +22,8 @@
  let g =.14;
  
  //stick length
- let stk1=y/2;
- let stk2=stk1/100*75;
+ let stk1=canvas.width-20;
+ let stk2=stk1/100*85;
  
 function drow() {
     // double pendulum equation
